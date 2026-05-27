@@ -74,8 +74,8 @@ def entrenar_pipeline():
     modelos = {
         "Regresión Lineal":   LinearRegression(),
         "Árbol de Decisión":  DecisionTreeRegressor(random_state=42, max_depth=4),
-        "Random Forest":      RandomForestRegressor(random_state=42, n_estimators=200,
-                                                     max_depth=5, min_samples_leaf=2),
+        "Random Forest":      RandomForestRegressor(random_state=42, n_estimators=100,
+                                                     max_depth=4),
         "Gradient Boosting":  GradientBoostingRegressor(random_state=42, n_estimators=200,
                                                          learning_rate=0.05, max_depth=3,
                                                          subsample=0.8),
